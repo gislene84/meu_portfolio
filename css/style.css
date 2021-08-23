@@ -1,0 +1,154 @@
+*{
+    margin: 0;/*tamanho da margem*/
+    padding: 0;/*preenchimento na altura*/
+    box-sizing: border-box;/*As propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin*/
+    font-family: 'Saira Extra Condensed', sans-serif;/*tipo da fonte*/
+}
+html,body{
+    height: 100%;/*determina a altura da área do conteúdo de um elemento*/
+}
+.parent{
+    display: flex;/*Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens*/
+}
+.sidebar{
+    width:20%;/*determina a largura da área de conteúdo de um elemento*/
+    height: 100%;/*determina a altura da área do conteúdo de um elemento*/
+    position: fixed;/*irá fixar a posição do elemento na coordenada que você definir. A medida que a página é rolada, o elemento continua fixo na posição que você definiu e o conteúdo da página rola normalmente*/
+    background-color: #512679;/*cor de fundo*/
+}
+.sidebar-pos{
+    position: absolute;/*posicionar qualquer elemento de acordo com o elemento pai que tenha um position diferente de static.*/
+    top:50%;/*superior*/
+    transform:translateY(-50%);/*reposiciona um elemento na direção horizontal e/ou vertical*/
+}
+.img-sidebar{
+    text-align:center;/*centralizar a imagem*/
+}
+
+.img-sidebar img{
+    width: 80%;/*determina a largura da área de conteúdo de um elemento*/
+    border:8px solid #62318e;/*tamanho, forma e cor da bordar*/
+    border-radius: 50%;/*tamanho da bordar*/
+}
+.menu{
+    margin:20px 0;/*20px cima/baixo, 0 direita/esquerda*/
+    text-align: center;/*centralizar o texto*/
+}
+
+.menu a{
+    color: white;/*cor da fonte*/
+    opacity: 0.4;/*opacidade da cor da letra*/
+    font-size: 24px;/*tamanho da fonte*/
+    display: block;/*faz com que o elemento HTML seja renderizado como bloco, tal como os parágrafos e os cabeçalhos o são. Um bloco contém um espaço em branco tanto em cima como embaixo e não permite outros elementos HTML ao lado*/
+    margin-bottom: 20px;/*tamanho da margem do fundo*/
+    text-decoration: none;/*retirando o traço abaixo da palavra*/
+}
+
+.menu a.selected{
+    opacity: 1;/*opacidade da cor da letra*/
+    
+}
+.content{
+    position:absolute;
+    left: 20%;/*esquerda*/
+    width: 80%;/*determina a largura da área de conteúdo de um elemento*/
+    height: 100%;/*determina a altura da área do conteúdo de um elemento*/
+    overflow-y:auto;
+    padding:0 3%;/*preenchimento na altura, 0 cima/baixo 3 direita/esquerda*/
+}
+
+section.descricao{
+    position: relative;/*posiciona o elemento em relação a si mesmo. Ou seja, o ponto zero será o canto superior esquerdo*/
+    top:50%;/*superior*/
+    transform:translateY(-50%);/*reposiciona um elemento na direção horizontal e/ou vertical*/
+}
+
+section.descricao h2{
+    color:#343a40;/*cor da fonte*/
+    font-size: 46px;/*tamanho da fonte*/
+}
+
+section.descricao h2 > span,section.descricao h3 > span
+{
+    color:  #62318e;/*cor da fonte*/
+}
+
+section.descricao h3{
+    margin:15px 0;/*15 cima/baixo, 0 direita/esquerda*/
+    color: #6c757d;/*cor da fonte*/
+    font-size: 26px;/*tamanho da fonte*/
+}
+
+section.descricao p{
+    color:#6c757d;/*cor da fonte */
+    font-size:20px;/*tamanho da fonte*/
+    margin-top:40px;/*margim a cima*/
+}
+
+.icons-social{
+    margin-top:20px;/*margim a cima*/
+}
+
+.icons-social a{
+    text-decoration:none;/*retirando o traço abaixo da palavra*/
+    color: white;/*tamanho da fonte*/
+    background-color: gray;/*cor de fundo*/
+    width:40px;/*determina a largura da área de conteúdo de um elemento*/
+    height:40px;/*preenchimento na altura*/
+    border-radius:20px;/*tamanho da roda da bordar*/
+    display: inline-block;/*Um bloco inline é colocado inline (ou seja, na mesma linha do outro bloco), colocando o bloco na mesma linha*/
+    margin:0 10px; /* 0 cima/baixo, 10px direita/esquerda*/
+    text-align: center;/*alinhar texto no meio*/
+}
+
+.icons-social i{
+    line-height:40px;/*permite controlar o espaçamento entre as linhas de um texto*/
+}
+.sidebar-sobre{
+    width:20%;/*determina a largura da área de conteúdo de um elemento*/
+    height: 100%;/*determina a altura da área do conteúdo de um elemento*/
+    position: fixed;/*irá fixar a posição do elemento na coordenada que você definir. A medida que a página é rolada, o elemento continua fixo na posição que você definiu e o conteúdo da página rola normalmente*/
+    background-color: #512679;/*cor de fundo*/
+}
+.content-sobre{
+    position:absolute;
+    left: 20%;/*esquerda*/
+    width: 80%;/*determina a largura da área de conteúdo de um elemento*/
+    height: 10%;/*determina a altura da área do conteúdo de um elemento*/
+    overflow-y:scroll;
+    padding:0 3%;/*preenchimento na altura, 0 cima/baixo 3 direita/esquerda*/
+    background-color: #62318e;/*cor de fundo*/
+    padding: 15px 15px;/*espaçamento na altura do lado de dentro dos elementos*/
+}
+.content-sobre a{
+    color: white;/*cor da fonte*/
+    text-decoration: none;/*retirando o traço abaixo da palavra*/
+    font-size: 24px;/*tamanho da fonte*/
+}
+.descricao-sobre h2 span{
+    color:#343a40;/*cor da fonte*/
+    font-size: 30px;/*tamanho da fonte*/
+    
+}
+.content_2{
+    position:absolute;
+    left: 20%;/*esquerda*/
+    width: 80%;/*determina a largura da área de conteúdo de um elemento*/
+    height: 10%;/*determina a altura da área do conteúdo de um elemento*/
+    overflow-y:scroll;/*retira a scrrol (barra de rolamento)*/
+    padding:70px 0%;/*preenchimento na altura, 0 cima/baixo 3 direita/esquerda*/
+}
+.content-expert{
+    position:absolute;
+    left: 20%;/*esquerda*/
+    width: 80%;/*determina a largura da área de conteúdo de um elemento*/
+    height: 20%;/*determina a altura da área do conteúdo de um elemento*/
+    overflow-y:scroll;/*retira a scrrol (barra de rolamento)*/
+    background-color: #62318e;/*cor de fundo*/
+    padding:70px 0%;/*preenchimento na altura, 0 cima/baixo 3 direita/esquerda*/
+}
+.content-expert a{
+    color: white;/*cor da fonte*/
+    text-decoration: none;/*retirando o traço abaixo da palavra*/
+    font-size: 24px;/*tamanho da fonte*/
+}
